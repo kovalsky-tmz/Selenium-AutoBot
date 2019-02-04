@@ -25,7 +25,7 @@ class selenium():
 		driver=self.driver
 		print("Going to product...")
 		for i in range(1,11):
-			driver.get("http://wizaz.pl/kosmetyki/profil,2117981,kiniamalina.html")
+			driver.get("https://wizaz.pl/kosmetyki/profil,2661833,testow.html")
 			time.sleep(1)
 			find=driver.find_elements_by_xpath("//div[@class='hit']//a[@rel='nofollow']")
 			print('Products to liked: ',len(find))
@@ -40,10 +40,10 @@ class selenium():
 					like=driver.find_element_by_xpath("//*[@class='clearfix review glow']//*[@class='ng-scope']//*[@class='ng-isolate-scope']")
 					driver.execute_script("arguments[0].click();", like)
 					print("LIKE IT! Going back...")
-					driver.get("http://wizaz.pl/kosmetyki/profil,2117981,kiniamalina.html")
+					driver.get("https://wizaz.pl/kosmetyki/profil,2661833,testow.html")
 				else:
 					print('Already Liked! Going back...')
-					driver.get("http://wizaz.pl/kosmetyki/profil,2117981,kiniamalina.html")
+					driver.get("https://wizaz.pl/kosmetyki/profil,2661833,testow.html")
 
 					
 
